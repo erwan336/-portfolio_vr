@@ -5,72 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio – Ewan N'Guessan</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; }
-    h1, h2 { color: #2c3e50; }
-    ul { padding-left: 20px; }
-    .contact, .skills, .projects, .education { margin-bottom: 30px; }
-    .gallery img { width: 100%; max-width: 600px; margin: 10px 0; border: 1px solid #ccc; }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 40px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e2a38;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #293949;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #1e2a38;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #fafafa;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    footer {
+      background: #1e2a38;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Ewan N'Guessan</h1>
-    <p>Étudiant en Master de Géographie – Spécialisé en Géomatique</p>
-    <p>📞 07 51 15 92 92 | 📧 <a href="mailto:ericn4712@gmail.com">ericn4712@gmail.com</a></p>
+    <p>Géomaticien passionné de cartographie – Master de Géographie</p>
+    <p>📞 07 51 15 92 92 | ✉️ <a href="mailto:ericn4712@gmail.com" style="color: #ffd">ericn4712@gmail.com</a></p>
   </header>
 
-  <section class="presentation">
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#cartes">Cartes</a>
+  </nav>
+
+  <section id="presentation">
     <h2>Présentation</h2>
-    <p>Étudiant en Master de Géographie à Aix-Marseille Université, passionné par les SIG, la télédétection et l'aménagement du territoire. Mon parcours allie analyse spatiale, compétences techniques et expérience interculturelle.</p>
+    <p>Passionné par les représentations spatiales, je conçois les cartes comme des outils puissants pour révéler les dynamiques environnementales et sociales. Actuellement en Master de Géographie à Aix-Marseille Université, je développe des compétences avancées en SIG, télédétection et analyse territoriale.</p>
   </section>
 
-  <section class="skills">
+  <section id="competences">
     <h2>Compétences</h2>
     <ul>
       <li>SIG : QGIS, ArcGIS, Google Earth Engine</li>
       <li>Langages : Python (geopandas, rasterio), HTML/CSS</li>
-      <li>Cartographie, télédétection : NDVI, SAVI, NDWI</li>
+      <li>Indices : NDVI, SAVI, NDWI, NDBI</li>
       <li>Modélisation : CA-Markov, TerrSet</li>
-      <li>Communication interculturelle et accompagnement</li>
+      <li>Communication interculturelle, vulgarisation scientifique</li>
     </ul>
   </section>
 
-  <section class="education">
-    <h2>Formation</h2>
-    <ul>
-      <li>Master de Géographie – Aix-Marseille Université (2024–2026)</li>
-      <li>Licence [Nom du diplôme précédent] – [Université] – [Année]</li>
-    </ul>
-  </section>
-
-  <section class="projects">
+  <section id="projets">
     <h2>Projets</h2>
     <ul>
-      <li><strong>Modélisation des forêts classées (Séguéla et Koba)</strong> : analyse diachronique 1995–2024, classification Sentinel/Landsat, projection 2035.</li>
-      <li><strong>École d'été à Sousse (Tunisie)</strong> : étude des centuriations romaines, terrain et SIG.</li>
-      <li><strong>Bénévolat – Croix-Rouge française</strong> : aide logistique, accompagnement de publics vulnérables.</li>
+      <li><strong>Modélisation des forêts classées (Séguéla et Koba)</strong> : Analyse 1995–2024, classification Sentinel/Landsat, projection 2035.</li>
+      <li><strong>École d'été à Sousse (Tunisie)</strong> : étude des centuriations romaines, observations terrain et SIG.</li>
+      <li><strong>Bénévolat – Croix-Rouge française</strong> : accompagnement et orientation des nouveaux arrivants.</li>
     </ul>
   </section>
 
-  <section class="gallery">
-    <h2>Cartes</h2>
-    <ul>
-      <li><img src="carte de localisation Yamal.png" alt="Carte Yamal"><p>Localisation du site d’étude – Yamal</p></li>
-      <li><img src="carte de relation NDVI_TPS_NDBI.png" alt="NDVI_TPS_NDBI"><p>Relation entre NDVI, température et bâti</p></li>
-      <li><img src="centre_ville _aubagne ilot de chaleur.png" alt="Centre ville Aubagne"><p>Centre-ville Aubagne – îlot de chaleur</p></li>
-      <li><img src="exemple de lieu chaud ilot.png" alt="Lieu chaud"><p>Exemple de lieu chaud urbain</p></li>
-      <li><img src="ndvi_aubagne.png" alt="NDVI Aubagne"><p>NDVI – Aubagne</p></li>
-      <li><img src="projection 2035 de foret.png" alt="Projection forêt 2035"><p>Projection de la forêt – 2035</p></li>
-      <li><img src="température de surface.png" alt="Température de surface"><p>Température de surface</p></li>
-      <li><img src="zones_fortement_urbanisées.png" alt="Zones urbanisées"><p>Zones fortement urbanisées</p></li>
-    </ul>
+  <section id="cartes">
+    <h2>Cartes réalisées</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="projection 2035 de foret.png" alt="Projection 2035">
+        <p>Projection de l'occupation forestière en 2035 (Séguéla)</p>
+      </div>
+      <div class="gallery-item">
+        <img src="température de surface.png" alt="Température de surface">
+        <p>Carte de température de surface (UHI)</p>
+      </div>
+      <div class="gallery-item">
+        <img src="zones_fortement_urbanisées.png" alt="Zones urbanisées">
+        <p>Identification des zones fortement urbanisées</p>
+      </div>
+      <div class="gallery-item">
+        <img src="ndvi_aubagne.png" alt="NDVI Aubagne">
+        <p>Indice de végétation NDVI à Aubagne</p>
+      </div>
+      <div class="gallery-item">
+        <img src="centre_ville _aubagne ilot de chaleur.png" alt="Aubagne chaleur">
+        <p>Centre-ville d'Aubagne – îlot de chaleur urbain</p>
+      </div>
+      <div class="gallery-item">
+        <img src="exemple de lieu chaud ilot.png" alt="Lieu chaud">
+        <p>Exemple localisé de zone thermique élevée</p>
+      </div>
+      <div class="gallery-item">
+        <img src="carte de relation NDVI_TPS_NDBI.png" alt="Relations indicateurs">
+        <p>Relation NDVI / température / urbanisation</p>
+      </div>
+      <div class="gallery-item">
+        <img src="carte de localisation Yamal.png" alt="Localisation Yamal">
+        <p>Localisation du site d’étude – Yamal</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Ewan N'Guessan – Tous droits réservés</p>
+    <p>© 2025 Ewan N'Guessan – Portfolio cartographique</p>
   </footer>
 </body>
 </html>
